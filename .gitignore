@@ -1,6 +1,7 @@
 # Source files (not needed for the website)
 *.pptx
 *.pdf
+!MRV Professional CV.pdf
 
 # OS files
 .DS_Store
