@@ -1394,6 +1394,52 @@ img {
   border-radius: var(--radius-xl);
 }
 
+/* ---------- REAL IMAGES (replacing placeholders) ---------- */
+.hero-profile-img {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  box-shadow: 0 0 60px rgba(0, 212, 170, 0.1);
+}
+
+.about-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+}
+
+.timeline-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-top: 12px;
+}
+
+.project-featured-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.project-card-img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.contact-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */
