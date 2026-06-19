@@ -1440,6 +1440,17 @@ img {
   border-radius: var(--radius-xl);
 }
 
+/* Prevent text overflow on small screens */
+.hero-contact-item,
+.contact-link-value,
+.timeline-details li,
+.project-featured-text,
+.hero-description,
+.about-text-large {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */
@@ -1589,14 +1600,31 @@ img {
   .contact-visual {
     position: static;
     max-width: 400px;
+    margin: 0 auto;
   }
 
   .skills-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
+
+  .hero-profile-img {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero-profile-img {
+    max-width: 160px;
+  }
+
+  .contact-link-value {
+    font-size: 0.85rem;
+  }
+
+  .project-featured-img {
+    border-radius: var(--radius-md);
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -1721,6 +1749,46 @@ img {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .timeline-img {
+    border-radius: var(--radius-sm);
+  }
+
+  .about-img {
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-img {
+    border-radius: var(--radius-lg);
+  }
+
+  .hero-profile-img {
+    border-width: 2px;
+    box-shadow: 0 0 30px rgba(0, 212, 170, 0.1);
+  }
+
+  .about-image-placeholder,
+  .contact-image-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .about-image-placeholder span,
+  .contact-image-placeholder span {
+    font-size: 0.65rem;
+  }
+
+  .hero-visual {
+    gap: 16px;
+  }
+
+  .hero-image-container {
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 6px 14px;
   }
 }
 
