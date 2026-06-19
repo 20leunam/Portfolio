@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manuel Rodríguez Vicente — Robotics & Embedded Systems Engineer. Portfolio profesional con experiencia en aceleradores de partículas, robótica competitiva y sistemas embebidos.">
+  <meta name="keywords" content="robotics, embedded systems, PCB design, KiCad, ESP32, STM32, particle accelerator, ALBA, OPRobots, micromouse, PLC, automation">
+  <meta name="author" content="Manuel Rodríguez Vicente">
+  <meta property="og:title" content="Manuel Rodríguez Vicente — Robotics & Embedded Systems Engineer">
+  <meta property="og:description" content="Robotics and embedded systems engineer with experience in particle accelerators, industrial automation, PCB design and competitive robotics.">
+  <meta property="og:type" content="website">
+  <title>Manuel Rodríguez Vicente | Robotics & Embedded Systems Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">MRV</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-decoration">
+      <div class="circuit-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="hero-greeting">Hi, I'm</span>
+        <span class="hero-name-main">Manuel Rodríguez<span class="hero-name-accent">Vicente</span></span>
+      </h1>
+      <h2 class="hero-title">
+        <span class="title-text">Robotics & Embedded Systems Engineer</span>
+        <span class="title-cursor">|</span>
+      </h2>
+      <p class="hero-description">
+        Robotics and embedded systems engineer with hands-on experience in accelerator facilities,
+        industrial automation, PCB design and competitive robotics. Specialized in hardware prototyping,
+        embedded systems and autonomous robots.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Get in touch
+        </a>
+        <a href="#experience" class="btn btn-outline">
+          <i class="fas fa-chevron-down"></i> Explore my work
+        </a>
+        <!-- PLACEHOLDER: CV Download button -->
+        <a href="#" class="btn btn-outline" title="Descargar CV en PDF">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+      <div class="hero-contact-row">
+        <a href="tel:+34659274142" class="hero-contact-item"><i class="fas fa-phone"></i> +34 659 27 41 42</a>
+        <a href="mailto:manuelrodriguezvicnt@gmail.com" class="hero-contact-item"><i class="fas fa-envelope"></i> manuelrodriguezvicnt@gmail.com</a>
+        <a href="https://oprobots.org" target="_blank" rel="noopener" class="hero-contact-item"><i class="fas fa-globe"></i> oprobots.org</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image-container">
+        <!-- PLACEHOLDER: Professional profile photo -->
+        <div class="hero-image-placeholder" id="heroProfileImage">
+          <i class="fas fa-user-astronaut"></i>
+          <span>Profile Photo</span>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">8+</span>
+          <span class="stat-label">Years of Experience</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">PCBs Designed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">Robots Built</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Countries Competed</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">The engineer behind<span class="text-highlight"> the robots</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col">
+          <!-- PLACEHOLDER: About section image (working on a robot or in the lab) -->
+          <div class="about-image-placeholder" id="aboutImage">
+            <i class="fas fa-robot"></i>
+            <span>Working Photo</span>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-text-large">
+            I'm a <strong>Robotics & Embedded Systems Engineer</strong> passionate about building things
+            that move, sense, and interact with the physical world. From designing custom PCBs to
+            programming microcontrollers and competing internationally with autonomous robots.
+          </p>
+          <div class="about-details">
+            <div class="about-detail-item">
+              <i class="fas fa-atom"></i>
+              <div>
+                <h4>Particle Accelerator Operator</h4>
+                <p>Currently working at ALBA Synchrotron, operating the accelerator in the Control Room and collaborating with the Magnets and Front-End Systems group.</p>
+              </div>
+            </div>
+            <div class="about-detail-item">
+              <i class="fas fa-microchip"></i>
+              <div>
+                <h4>Hardware Prototyping Expert</h4>
+                <p>+30 PCBs designed with KiCad, from concept to assembled boards. Expert in high-precision SMD/THT soldering and 3D printing manufacturing.</p>
+              </div>
+            </div>
+            <div class="about-detail-item">
+              <i class="fas fa-trophy"></i>
+              <div>
+                <h4>Competitive Roboticist</h4>
+                <p>Cofounder of OPRobots, a competitive robotics team. Built the fastest micromouse robot in Europe. International competitions in Romania, Mexico, USA and Japan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="skills section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">Technologies &<span class="text-highlight"> Expertise</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- PCB Design -->
+        <div class="skill-card" data-category="pcb">
+          <div class="skill-icon"><i class="fas fa-draw-polygon"></i></div>
+          <h3 class="skill-title">PCB Design</h3>
+          <p class="skill-subtitle">KiCad · +30 PCBs designed</p>
+          <div class="skill-tags">
+            <span class="skill-tag">KiCad</span>
+            <span class="skill-tag">Schematic Design</span>
+            <span class="skill-tag">Layout & Routing</span>
+            <span class="skill-tag">Gerber Generation</span>
+            <span class="skill-tag">Multi-layer PCBs</span>
+          </div>
+        </div>
+        <!-- Embedded Systems -->
+        <div class="skill-card" data-category="embedded">
+          <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+          <h3 class="skill-title">Embedded Systems</h3>
+          <p class="skill-subtitle">ESP32 · STM32 · Arduino</p>
+          <div class="skill-tags">
+            <span class="skill-tag">ESP32</span>
+            <span class="skill-tag">STM32</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Firmware Development</span>
+            <span class="skill-tag">Sensor Integration</span>
+          </div>
+        </div>
+        <!-- Programming -->
+        <div class="skill-card" data-category="programming">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3 class="skill-title">Programming</h3>
+          <p class="skill-subtitle">C · C++ · Python · Arduino</p>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Real-time Systems</span>
+          </div>
+        </div>
+        <!-- CAD & Design -->
+        <div class="skill-card" data-category="cad">
+          <div class="skill-icon"><i class="fas fa-cube"></i></div>
+          <h3 class="skill-title">CAD & 3D Design</h3>
+          <p class="skill-subtitle">Onshape · SolidWorks · SketchUp</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Onshape</span>
+            <span class="skill-tag">SolidWorks (30h cert.)</span>
+            <span class="skill-tag">SketchUp</span>
+            <span class="skill-tag">3D Modeling</span>
+          </div>
+        </div>
+        <!-- Manufacturing -->
+        <div class="skill-card" data-category="manufacturing">
+          <div class="skill-icon"><i class="fas fa-industry"></i></div>
+          <h3 class="skill-title">Manufacturing</h3>
+          <p class="skill-subtitle">3D Printing · Soldering · Assembly</p>
+          <div class="skill-tags">
+            <span class="skill-tag">3D Printing (FDM)</span>
+            <span class="skill-tag">SMD Soldering</span>
+            <span class="skill-tag">THT Soldering</span>
+            <span class="skill-tag">RF Cable Assembly</span>
+            <span class="skill-tag">Enclosure Design</span>
+          </div>
+        </div>
+        <!-- Industrial Automation -->
+        <div class="skill-card" data-category="automation">
+          <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+          <h3 class="skill-title">Industrial Automation</h3>
+          <p class="skill-subtitle">PLCs · Electrical Schematics</p>
+          <div class="skill-tags">
+            <span class="skill-tag">PLC Programming</span>
+            <span class="skill-tag">ABB Robots</span>
+            <span class="skill-tag">Electrical Diagrams</span>
+            <span class="skill-tag">Industrial Wiring</span>
+            <span class="skill-tag">REBT Knowledge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE SECTION ========== -->
+  <section class="experience section" id="experience">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Career Path</span>
+        <h2 class="section-title">Work<span class="text-highlight"> Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <!-- ALBA -->
+        <div class="timeline-item" data-company="alba">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-company-logo">
+                  <!-- PLACEHOLDER: ALBA Synchrotron logo -->
+                  <div class="company-logo-placeholder" id="logoAlba">
+                    <i class="fas fa-atom"></i>
+                  </div>
+                </div>
+                <div class="timeline-header-text">
+                  <span class="timeline-date">Sep 2021 — Present</span>
+                  <h3 class="timeline-role">Particle Accelerator Operator</h3>
+                  <h4 class="timeline-company">Synchrotron ALBA</h4>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <ul class="timeline-details">
+                  <li>Working in the <strong>Control Room</strong> operating the particle accelerator.</li>
+                  <li>Collaborating with the <strong>Magnets and Front-End Systems group</strong>.</li>
+                  <li>Development of a <strong>robotic inspection system</strong> for radiation-controlled areas.</li>
+                  <li>Obtained the title of <strong>Operator of Radiological Facilities</strong>.</li>
+                  <li>Learning about particle physics and accelerator control systems.</li>
+                </ul>
+                <!-- PLACEHOLDER: ALBA facility photo -->
+                <div class="timeline-image-placeholder" id="imgAlba">
+                  <i class="fas fa-image"></i>
+                  <span>ALBA Synchrotron Facility</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- iNSTER -->
+        <div class="timeline-item" data-company="inster">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-company-logo">
+                  <div class="company-logo-placeholder" id="logoInster">
+                    <i class="fas fa-broadcast-tower"></i>
+                  </div>
+                </div>
+                <div class="timeline-header-text">
+                  <span class="timeline-date">Feb 2019 — Aug 2021</span>
+                  <h3 class="timeline-role">Electronic Laboratory Technician</h3>
+                  <h4 class="timeline-company">iNSTER - CPS</h4>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <ul class="timeline-details">
+                  <li><strong>Assembly and testing of RF PCBs</strong> in a precision laboratory environment.</li>
+                  <li><strong>Manufacturing of RF and communication cables</strong> with exacting specifications.</li>
+                  <li><strong>Very precise SMD electronic welding work</strong> under microscope.</li>
+                  <li><strong>Modification and rework of PCBs</strong> for engineering prototypes.</li>
+                  <li>Hardware support to RF engineers and <strong>component sourcing</strong>.</li>
+                </ul>
+                <!-- PLACEHOLDER: RF lab / PCB assembly photo -->
+                <div class="timeline-image-placeholder" id="imgInster">
+                  <i class="fas fa-image"></i>
+                  <span>RF Lab / PCB Assembly Work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ledisson -->
+        <div class="timeline-item" data-company="ledisson">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-company-logo">
+                  <div class="company-logo-placeholder" id="logoLedisson">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                </div>
+                <div class="timeline-header-text">
+                  <span class="timeline-date">Apr 2017 — Feb 2019</span>
+                  <h3 class="timeline-role">Assistive Robot Developer — I+D Group</h3>
+                  <h4 class="timeline-company">Ledisson A&T</h4>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <ul class="timeline-details">
+                  <li><strong>Hardware development team leader</strong> of the netaBot assistive robot project.</li>
+                  <li><strong>3D design</strong> of mechanical components and enclosures.</li>
+                  <li><strong>Electronic design and PCB layout</strong> for robot subsystems.</li>
+                  <li><strong>Firmware programming</strong> for embedded controllers.</li>
+                  <li><strong>3D printing manager</strong> — prototyping and production parts.</li>
+                  <li>Teamwork and coordination with <strong>external partner companies</strong>.</li>
+                </ul>
+                <div class="timeline-links">
+                  <a href="http://drive.google.com/file/d/1epyWF3YyLG_f6ToSAtVgOqlzXQnsuySb/view" target="_blank" rel="noopener" class="timeline-link">
+                    <i class="fas fa-play-circle"></i> netaBot Demo Video
+                  </a>
+                </div>
+                <!-- PLACEHOLDER: netaBot assistive robot photo -->
+                <div class="timeline-image-placeholder" id="imgLedisson">
+                  <i class="fas fa-image"></i>
+                  <span>netaBot Assistive Robot</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Drakar -->
+        <div class="timeline-item" data-company="drakar">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-company-logo">
+                  <div class="company-logo-placeholder" id="logoDrakar">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                </div>
+                <div class="timeline-header-text">
+                  <span class="timeline-date">Jun 2017 — Feb 2019</span>
+                  <h3 class="timeline-role">PLC Programmer</h3>
+                  <h4 class="timeline-company">Drakar Soluciones de Control</h4>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <ul class="timeline-details">
+                  <li><strong>PLC programming and start-ups</strong> for industrial facilities.</li>
+                  <li><strong>Design of electrical and wiring diagrams</strong> for control panels.</li>
+                  <li><strong>Electrical panel maintenance</strong> and troubleshooting.</li>
+                  <li>Installation in <strong>Octopus facilities</strong> (Oporto, Algarve, Murcia, A Coruña).</li>
+                  <li>Two industrial freezers with capacity for <strong>30 tons of fish</strong> each.</li>
+                </ul>
+                <!-- PLACEHOLDER: Industrial automation / PLC panel photo -->
+                <div class="timeline-image-placeholder" id="imgDrakar">
+                  <i class="fas fa-image"></i>
+                  <span>Industrial PLC Panels / Facilities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION SECTION ========== -->
+  <section class="education section" id="education">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">Academic<span class="text-highlight"> Background</span></h2>
+      </div>
+      <div class="education-grid">
+        <!-- Education 1 -->
+        <div class="edu-card">
+          <div class="edu-year">2015 — 2017</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Higher FP in Industrial Automation and Robotics</h3>
+            <h4 class="edu-school">Colegio Hogar — Vigo</h4>
+            <div class="edu-details">
+              <h5>Key Learnings:</h5>
+              <ul>
+                <li>PLC programming and industrial communications</li>
+                <li>ABB robot programming and operation</li>
+                <li>Consolidation of electrical engineering knowledge</li>
+                <li>Basic electronics and sensor systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Education 2 -->
+        <div class="edu-card">
+          <div class="edu-year">2013 — 2015</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Higher FP in Electrotechnical and Automated Systems</h3>
+            <h4 class="edu-school">IES Politécnico de Vigo — Vigo</h4>
+            <div class="edu-details">
+              <h5>Key Learnings:</h5>
+              <ul>
+                <li>Electrical theory and REBT knowledge</li>
+                <li>Electrical safety standards and practices</li>
+                <li>Industrial maintenance procedures</li>
+                <li>Automation concepts with PLCs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Certifications -->
+        <div class="edu-card edu-card--cert">
+          <div class="edu-year">2023</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">CAS (CERN Accelerator School)</h3>
+            <h4 class="edu-school">Introduction to Accelerator Physics</h4>
+          </div>
+        </div>
+        <div class="edu-card edu-card--cert">
+          <div class="edu-year">Certification</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">SolidWorks (30h)</h3>
+            <h4 class="edu-school">Professional CAD Certification</h4>
+          </div>
+        </div>
+        <div class="edu-card edu-card--cert">
+          <div class="edu-year">Certification</div>
+          <div class="edu-content">
+            <h3 class="edu-degree">Operator of Radiological Facilities</h3>
+            <h4 class="edu-school">Nuclear Safety Council — Spain</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LANGUAGES SECTION ========== -->
+  <section class="languages section" id="languages">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Languages</span>
+        <h2 class="section-title">Communication<span class="text-highlight"> Skills</span></h2>
+      </div>
+      <div class="languages-grid">
+        <div class="lang-card">
+          <div class="lang-flag">🇪🇸</div>
+          <h3 class="lang-name">Spanish</h3>
+          <p class="lang-level">Native</p>
+          <div class="lang-bar">
+            <div class="lang-bar-fill" style="width: 100%"></div>
+          </div>
+        </div>
+        <div class="lang-card">
+          <div class="lang-flag">🇬🇧</div>
+          <h3 class="lang-name">English</h3>
+          <p class="lang-level">Professional Working Proficiency</p>
+          <div class="lang-bar">
+            <div class="lang-bar-fill" style="width: 75%"></div>
+          </div>
+          <p class="lang-note">International competition experience in Romania, Mexico, USA and Japan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="projects section" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Personal<span class="text-highlight"> Projects</span></h2>
+      </div>
+
+      <!-- OPRobots - Featured Project -->
+      <div class="project-featured">
+        <div class="project-featured-image">
+          <!-- PLACEHOLDER: OPRobots team photo or robot competition photo -->
+          <div class="project-image-placeholder large" id="imgOPRobots">
+            <i class="fas fa-robot"></i>
+            <span>OPRobots Team & Robots</span>
+          </div>
+        </div>
+        <div class="project-featured-content">
+          <span class="project-badge">🏆 Featured Project</span>
+          <h3 class="project-featured-title">OPRobots — Competitive Robotics Team</h3>
+          <p class="project-featured-text">
+            Cofounder of OPRobots, a competitive robotics team that has designed and built
+            <strong>more than 30 robots</strong> for national and international championships.
+            Our team holds the title of the <strong>fastest micromouse robot in Europe</strong>.
+            We compete internationally in Romania, Mexico, USA and Japan, pushing the boundaries
+            of autonomous robotics through continuous R&D and innovation.
+          </p>
+          <div class="project-featured-stats">
+            <div class="project-stat">
+              <span class="project-stat-num">30+</span>
+              <span class="project-stat-label">Robots Built</span>
+            </div>
+            <div class="project-stat">
+              <span class="project-stat-num">4</span>
+              <span class="project-stat-label">Countries</span>
+            </div>
+            <div class="project-stat">
+              <span class="project-stat-num">🏆</span>
+              <span class="project-stat-label">Fastest Micromouse<br>in Europe</span>
+            </div>
+          </div>
+          <div class="project-featured-links">
+            <a href="https://oprobots.github.io/nuestros-robots/" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> Explore Our Robots
+            </a>
+            <a href="http://www.youtube.com/watch?v=zVNN-iyGaY4" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fab fa-youtube"></i> Watch OPRobots in Action
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maker Projects Grid -->
+      <h3 class="projects-subtitle">Maker Projects & Inventions</h3>
+      <div class="projects-grid">
+        <!-- Project 1: 3D Printers -->
+        <div class="project-card">
+          <!-- PLACEHOLDER: Custom 3D printer photo -->
+          <div class="project-card-image">
+            <div class="project-image-placeholder" id="img3DPrinters">
+              <i class="fas fa-cube"></i>
+              <span>Custom 3D Printers</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h4 class="project-card-title">Design & Manufacturing of 3D Printers</h4>
+            <p>Designed and built <strong>two custom 3D printers</strong> from scratch:
+              a Prusa i3 (2015) and an original design (2020–2022). Both machines
+              used for prototyping robot parts and personal projects.</p>
+            <span class="project-period">2015 — 2022</span>
+          </div>
+        </div>
+        <!-- Project 2: Electric Motors -->
+        <div class="project-card">
+          <!-- PLACEHOLDER: Custom electric motor photo -->
+          <div class="project-card-image">
+            <div class="project-image-placeholder" id="imgMotors">
+              <i class="fas fa-magnet"></i>
+              <span>Custom Electric Motors</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h4 class="project-card-title">Custom Electric Motors</h4>
+            <p>Designed and manufactured <strong>three custom electric motors</strong>
+              from scratch. Complete process including winding, magnet placement,
+              and performance testing.</p>
+            <span class="project-period">2012 — 2016</span>
+          </div>
+        </div>
+        <!-- Project 3: Electric Inline Skates -->
+        <div class="project-card">
+          <!-- PLACEHOLDER: Electric inline skates photo -->
+          <div class="project-card-image">
+            <div class="project-image-placeholder" id="imgSkates">
+              <i class="fas fa-skating"></i>
+              <span>Electric Inline Skates</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h4 class="project-card-title">Electrical Inline Skates</h4>
+            <p>Ongoing project to develop <strong>motorized inline skates</strong>
+              with custom motor controllers, battery pack integration, and
+              wireless remote control.</p>
+            <span class="project-period">2020 — Present</span>
+          </div>
+        </div>
+        <!-- Project 4: Arduino Projects -->
+        <div class="project-card">
+          <!-- PLACEHOLDER: Arduino projects photo -->
+          <div class="project-card-image">
+            <div class="project-image-placeholder" id="imgArduino">
+              <i class="fas fa-microchip"></i>
+              <span>Arduino Projects</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h4 class="project-card-title">Arduino Projects</h4>
+            <p>Multiple <strong>Arduino-based projects</strong> exploring sensor
+              integration, motor control, home automation, and prototyping
+              of proof-of-concept embedded systems.</p>
+            <span class="project-period">2013 — 2016</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Links Section -->
+      <div class="projects-videos">
+        <h3 class="projects-subtitle">Project Videos & Demos</h3>
+        <div class="video-links-grid">
+          <a href="http://www.youtube.com/watch?v=CYksyb7bwmA" target="_blank" rel="noopener" class="video-link-card">
+            <div class="video-link-icon"><i class="fab fa-youtube"></i></div>
+            <div class="video-link-info">
+              <h4>Inventions & Constructions</h4>
+              <p>3D printers, motors, and maker projects showcase</p>
+            </div>
+          </a>
+          <a href="http://www.youtube.com/watch?v=Jt6FAOrRcxY" target="_blank" rel="noopener" class="video-link-card">
+            <div class="video-link-icon"><i class="fab fa-youtube"></i></div>
+            <div class="video-link-info">
+              <h4>Robots in Action</h4>
+              <p>Competition highlights and robot demonstrations</p>
+            </div>
+          </a>
+          <a href="http://drive.google.com/file/d/12M_aeWFAxx1zGwwoMbwJX7yzglDwltSv/view" target="_blank" rel="noopener" class="video-link-card">
+            <div class="video-link-icon"><i class="fab fa-google-drive"></i></div>
+            <div class="video-link-info">
+              <h4>Robot Demo Reel</h4>
+              <p>Additional robot footage and technical demonstrations</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's<span class="text-highlight"> Connect</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p>I'm always open to discussing new projects, collaborations, or opportunities in robotics and embedded systems.</p>
+          <div class="contact-links">
+            <a href="tel:+34659274142" class="contact-link-item">
+              <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+34 659 27 41 42</span>
+              </div>
+            </a>
+            <a href="mailto:manuelrodriguezvicnt@gmail.com" class="contact-link-item">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">manuelrodriguezvicnt@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://oprobots.org" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon"><i class="fas fa-globe"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Website</span>
+                <span class="contact-link-value">oprobots.org</span>
+              </div>
+            </a>
+            <a href="https://oprobots.github.io/nuestros-robots/" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon"><i class="fas fa-robot"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">OPRobots</span>
+                <span class="contact-link-value">Our Robot Collection</span>
+              </div>
+            </a>
+            <!-- PLACEHOLDER: LinkedIn profile link -->
+            <a href="#" class="contact-link-item" target="_blank" rel="noopener">
+              <div class="contact-link-icon"><i class="fab fa-linkedin"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">Connect on LinkedIn</span>
+              </div>
+            </a>
+            <!-- PLACEHOLDER: GitHub profile link -->
+            <a href="#" class="contact-link-item" target="_blank" rel="noopener">
+              <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">View my code repositories</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-visual">
+          <!-- PLACEHOLDER: Contact section image (working at desk/lab) -->
+          <div class="contact-image-placeholder" id="imgContact">
+            <i class="fas fa-laptop-code"></i>
+            <span>Let's work together</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">MRV</a>
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-social">
+          <!-- PLACEHOLDER: LinkedIn -->
+          <a href="#" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <!-- PLACEHOLDER: GitHub -->
+          <a href="#" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <!-- PLACEHOLDER: YouTube (OPRobots) -->
+          <a href="http://www.youtube.com/watch?v=zVNN-iyGaY4" class="footer-social-link" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Manuel Rodríguez Vicente. All rights reserved.</p>
+        <p>Built with <i class="fas fa-heart"></i> for GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
